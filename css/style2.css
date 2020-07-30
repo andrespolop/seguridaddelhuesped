@@ -1,0 +1,406 @@
+:root{
+    --Color-primario: #444fe9;
+    --color-d: #528fd5;
+    --background-fondo: #e6e6e6;
+    
+        --fondo:#E6E6E6;
+        --cuadrobajo: #111111f3;
+        --Encabezados: #cfcece;
+        --Texto-Encabezados: rgb(141, 137, 137);
+        --fondoEncabezados:rgba(0, 0, 0, 0.562);
+        --fondotextoEncabezados:rgba(0, 0, 0, 0.363);
+    
+}
+.imagen-titulo {
+
+    height: 5vh;
+    background-color: transparent;
+}
+img{
+    background-color: transparent;
+
+    width: 9vw;
+    margin-top: 1vw;
+}
+
+
+.titulo{
+
+    height: 10.5vw;
+    display: flex;
+   background: rgba(25, 20, 44, 0.808);
+  color: white;
+}
+.titulo h1{
+    background-color: transparent;
+    display: block;
+    justify-content: center;
+    width: 68vw;
+    text-align: center;
+    font-size: 4vw;
+    font-family: monospace;
+    
+}
+body{
+    background: var(--background-fondo);
+}
+
+header, .main{
+    
+    width: 90vw;
+    margin:1vw auto;
+    max-width: 80vw;
+}
+
+
+header nav{
+background: var(--color-d);/*Cambiamos el color de los link de navegación*/
+overflow:hidden;/*Resuelve problemas al crear el navegador al usar el float left y
+             permite mostrar el fondo, también para mostrar el float right y left en la misma linea*/
+
+}
+
+header nav ul{
+    list-style:none;/*Le quitamos los cuadrados a la lista de navegación*/
+
+}
+
+header nav ul li{
+    float: left;/*Indicamos que los botones de navegación esten uno al lado del otro*/
+}
+
+header nav ul li a{/*Editar como se ven los enlaces*/
+    padding: 0.2vw 0.4vw;
+    display: block;/*Para que se pueda ver el padding de arriba y abajo o no funciona*/
+    color: white;
+    text-decoration: none;/*Para quitar el subrayado del enlace a*/
+    
+
+}
+
+header nav ul li a:hover{/* el :hover -es para editar el comportamiento del enlace al pasar el 
+                    cursor encimma de él*/
+    color: white;
+    background: var(--Color-primario);
+    text-decoration: none;/*Para quitar el subrayado del enlace a*/
+    
+}
+
+header nav ul li a:active{/* el :activ -es para editar el comportamiento del enlace al dar clic en él*/
+color: rgb(89, 87, 114);
+background: #7279da;
+text-decoration: none;/*Para quitar el subrayado del enlace a*/
+
+}
+
+.main .articles{/*Editamos el cuadro que contiene los articulos*/
+    width: 51vw;/*decimos que ocupara el 67% de la pagina*/
+    margin-right: 1vw;/*Un margen a la derecha del 3%*/
+    margin-left: 1vw;
+    float: left;/*Ya explicamos esto antes*/
+    
+}
+
+.main .articles article{/*Editamos cómo se verá cada artículo*/
+    padding: .6vw;/*Separación entre cada artículo de 20px*/
+    margin-bottom: 2vw;/*Para que el pading arriba y abajo se puedan ver*/
+    background: white;/*Fondo blanco*/
+    
+}
+
+aside{/*Editamos el slidebar*/
+    width: 27vw;/*ocupara el 30% el otro 70% lo tiene 67% donde esta el articulo y 3% el margen*/
+    float: left;/*ya explicamos esto antes*/
+    background: #7279da;/*Aplicamos un color de fondo al slidebar*/
+    padding: 1.4vw;/*Separación entre cada slidebar de 20px*/
+    margin-bottom: 1.4vw;/*Para que el pading arriba y abajo se puedan ver*/
+    box-sizing: border-box;/*es una propiedad CSS para cambiar el modelo de caja por defecto
+                        de los navegadores. El ancho de un elemento se altera si se 
+                        le aplica un borde o un padding. Eso es porque la anchura del elemento 
+                        que tu especificas con CSS, por defecto no incluye borde ni padding.*/
+    border-radius: 2vw;
+
+}
+p{
+    font-size: 2.82vw;
+}
+
+
+article{
+    position: relative;
+    border-radius: 2vw;
+}
+
+div p::selection{
+color: white;
+background-color: darkgrey;
+}
+
+
+h2{
+    font-size: 2.8vw;
+}
+h3{
+    font-size: 2.8vw;
+}
+
+
+
+
+
+.BotonInicioSesion{   
+    color:white;
+    text-decoration: transparent;
+    font-size: 1.31vw;
+    padding: 1.09vw;
+}
+.BotonRegistrarse{
+    color:white;
+    text-decoration: transparent;
+    font-size: 1.31vw;
+    padding: 1.09vw;
+
+}
+
+/*editar vista un enlace que no hayamos visto*/
+
+
+/*Podemos poner la accion al pasar el mouse encima del link, el hover sirve para todo*/
+.BotonInicioSesion:hover{
+    text-decoration: underline;
+    background: rgba(44, 1, 87, 0.658);
+    border: 1px solid #11063a;
+    text-decoration: transparent;
+    
+}
+.BotonRegistrarse:hover{
+    text-decoration: underline;
+    background: rgba(2, 107, 33, 0.658);
+    border: 1px solid #063a11;
+    text-decoration: transparent;
+    
+    
+}
+
+/*Que accion toma al darle un clic*/
+.BotonInicioSesion:active{
+background:#110444a8 ;
+text-decoration: transparent;
+}
+
+.BotonRegistrarse:active{
+    background:#044414a8 ;
+    text-decoration: transparent;
+    }
+
+/*Como se veran los link que ya hemos visitado*/
+
+
+/*----------------------------------------------------------------------------------------*/
+
+.Acceso{
+    text-align: right; 
+}
+
+.BotonInicioSesion{
+    background: #11063ada;
+}
+.BotonRegistrarse{
+    background: #063a20c2;
+
+    
+}
+.header2{
+    text-align: right;
+}
+
+
+
+.cuadrooscuro{
+    background:var(--cuadrobajo);
+    
+    width: 100%;
+    padding-top: 2vw;
+    height: 0%;
+    display:inline-flex;
+    justify-content: center;
+  
+    
+}
+
+
+.encabezado {
+    margin: 0;
+    font-weight: bold;
+    width: 100%;
+    background: var(--fondoEncabezados);
+    color:var(--Encabezados);
+    font-style: italic;
+    font-size: 2vw;
+    font-family: 'Times New Roman', Times, serif;
+    padding-bottom: 2%;
+    padding-top: 2%;
+    text-align: center;
+    text-shadow:0px 4px 5px #000;
+    border-top-left-radius: 5%;
+    border-top-right-radius: 5%;  
+}
+.enlacesencabezado{
+    margin: 0;
+    padding: 0%;
+}
+
+
+.enlacesencabezado a{
+color: var(--Texto-Encabezados);
+background-color:var(--fondotextoEncabezados);
+padding: 2% 0%;
+
+width: 100%;
+display: block;
+list-style: none;
+font-size: 1.5vw;
+font-family:'poppins, consolas, sans-serif ,Segoe UI';
+text-decoration: transparent;
+text-align: center;
+justify-content: center;
+
+}
+
+
+
+.enlacesencabezado a:hover{    
+    background: #141414e7;;
+    text-decoration: transparent;
+    color: rgba(233, 20, 20, 0.685);
+
+    }
+    .enlacesencabezado a:active{
+        background: rgb(17, 17, 17);
+        text-decoration: transparent;
+        color: rgba(233, 20, 20, 0.685);
+    
+    }
+
+.caja{
+        background-color:transparent;
+        width: 33vw;
+        margin-left: calc(10vh/4);
+        margin-bottom: 4px;
+   
+    }
+
+    .textobajo{
+        color: var(--Texto-Encabezados);
+        background-color: rgba(7, 7, 7, 0.945);
+        padding: 5vw 0vw;
+        width: 100vw;
+     
+        list-style: none;
+        font-size: 2.2vw;
+        font-family:'poppins, consolas, sans-serif ,Segoe UI';
+        text-decoration: transparent;
+        text-align: center;
+        justify-content: center;
+        
+        }
+.caja2{
+            background-color:transparent;
+            width: 24vw;
+           margin-bottom: 4px;
+            margin-left: calc(0.1vw/4);
+            display: block;
+            
+}
+.textoencabezado2{
+    color: var(--Texto-Encabezados);
+    background-color: transparent;
+    margin-top: 0px;
+   
+    display: block;
+    list-style: none;
+    font-size: 1.5vw;
+    font-family:'poppins, consolas, sans-serif ,Segoe UI';
+    text-decoration: transparent;
+    text-align: left;
+    justify-content: center;
+
+    
+    }
+
+.caja3{
+    
+ background-color:var(--cuadrobajo);
+ margin: 0px;
+          
+            
+            
+}
+.caja3 p{
+  
+    background-color:transparent;
+    margin-left: 1vh;
+    padding:.5vw 1vh 1vw 1vh;
+    text-align: left;
+    color: var(--Texto-Encabezados);
+    font-size: 1.3vw;
+}
+hr {
+    border: 0 solid #000000;
+    
+    background-color: rgba(51, 49, 49, 0.945);
+    border-top: 1px solid #000000;
+    height: 1px;
+    margin: 5px 0;
+    display: block;
+    clear: both;
+    margin: 0;
+
+}
+
+
+.hr {
+    border: 0 solid #000000;
+    
+    background-color: rgba(51, 49, 49, 0.945);
+    border-top: 1px solid #ffffff;
+    height: 1px;
+    margin: 5px 0;
+    display: block;
+    clear: both;
+    margin: 0;
+
+}
+
+.slider{
+    width: 95%;
+    margin: auto;
+    overflow: hidden;
+}
+.slider ul{
+    display: flex;
+    padding: 0;
+    height: 400%;
+    animation: cambio 20s infinite;
+}
+.slider li{
+    list-style: none;
+    width: 100%;
+}
+.slider img{
+    width: 100%;
+}
+
+@keyframes cambio{
+    0% {margin-left:0;}
+    20% {margin-left:0;}
+
+    25% {margin-left:-100;}
+    45% {margin-left:-100;}
+
+    50% {margin-left:-200;}
+    70% {margin-left:-200;}
+
+    75% {margin-left:-100;}
+    100% {margin-left:-100;}
+}
